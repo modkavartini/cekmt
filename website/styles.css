@@ -1,0 +1,101 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+
+    --main-font: "Poppins", sans-serif;
+    --sec-font: "";
+    --bg: #334048;
+    --lbg: #2d2a3c;
+    --main: #f7eee5;
+    --orange: #f8792a;
+}
+
+html,
+body {
+    background-color: var(--bg);
+    background-image: url("https://i.imgur.com/lGOhabh.jpeg") !important;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#text {
+    font-family: var(--main-font);
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.biggie {
+    padding-top: 2.5rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.smolie {
+    padding: 2.75rem;
+    padding-bottom: 3rem;
+    font-weight: 400;
+}
+
+.first {
+    padding-top: 5rem;
+}
+
+.white {
+    color: var(--main);
+}
+
+.orange {
+    color: var(--orange);
+}
+
+.image {
+    text-align: center;
+    width: 100%;
+}
+
+.button {
+    border: none;
+    display: inline-block;
+    padding: 19px 26px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--orange);
+    background-color: var(--lbg);
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 5rem;
+}
+
+.link {
+    min-width: 20% !important;
+    border-radius: 15px;
+}
+
+.link:hover {
+    transform: scale(1.2, 1.2);
+    transition: transform 500ms;
+    -webkit-transition: transform 500ms;
+}
+
+.link:not(:hover) {
+    transform: scale(1, 1);
+    transition: transform 500ms;
+    -webkit-transition: transform 500ms;
+}
