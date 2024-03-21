@@ -5,41 +5,22 @@
 
     --main-font: "Poppins", sans-serif;
     --sec-font: "";
-    --bg: #111318;
-    --sbg: #000000;
-    --lbg: #171e22;
-    --main: #f9d7d6;
-    --blue: #55c1c5;
+    --bg: #334048;
+    --lbg: #2d2a3c;
+    --main: #f7eee5;
+    --orange: #f8792a;
 }
-
-/* add scrollbar */
 
 html,
-
-body {
-    background-color: var(--lbg);
-    border-radius: 60px;
-    padding: 20px;
-}
-
 body {
     background-color: var(--bg);
+    background-image: url("https://i.imgur.com/lGOhabh.jpeg") !important;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
     user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-.logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px;
-    height: 150px;
-    padding-top: 2rem;
 }
 
 #text {
@@ -70,23 +51,27 @@ body {
     color: var(--main);
 }
 
-.blue {
-    color: var(--blue);
+.orange {
+    color: var(--orange);
+}
+
+.image {
+    text-align: center;
+    width: 100%;
 }
 
 .button {
-    background-position: center;
-    background-size: cover;
+    border: none;
+    display: inline-block;
+    padding: 19px 26px;
     vertical-align: middle;
+    overflow: hidden;
     text-decoration: none;
-    color: var(--blue);
+    color: var(--orange);
     background-color: var(--lbg);
     text-align: center;
     cursor: pointer;
-    white-space: nowrap;
-    min-width: 50%;
-    border-radius: 15px;
-    border: none;
+    white-space: nowrap
 }
 
 .links {
@@ -95,20 +80,22 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
+}
+
+.link {
+    min-width: 20% !important;
+    border-radius: 15px;
 }
 
 .link:hover {
-    padding: 3rem 5rem;
-    /* color: var(--blue); */
-    filter: grayscale(100%);
-    transition: padding 1s, color 1s, filter 1s;
+    transform: scale(1.2, 1.2);
+    transition: transform 500ms;
+    -webkit-transition: transform 500ms;
 }
 
 .link:not(:hover) {
-    padding: 2rem 4rem;
-    /* color: #00000000; */
-    filter: grayscale(0%);
-    transition: padding 1s, color 1s, filter 1s;
+    transform: scale(1, 1);
+    transition: transform 500ms;
+    -webkit-transition: transform 500ms;
 }
-
