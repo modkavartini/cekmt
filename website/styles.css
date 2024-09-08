@@ -7,9 +7,9 @@
     --sec-font: "";
     --bg: #111318;
     --sbg: #000000;
-    --lbg: #171e22;
-    --main: #f9d7d6;
-    --blue: #55c1c5;
+    --lbg: #1f1d24;
+    --main: #eb3949;
+    --orange: #ed5d28;
 }
 
 /* add scrollbar */
@@ -70,8 +70,8 @@ body {
     color: var(--main);
 }
 
-.blue {
-    color: var(--blue);
+.orange {
+    color: var(--orange);
 }
 
 .button {
@@ -79,7 +79,7 @@ body {
     background-size: cover;
     vertical-align: middle;
     text-decoration: none;
-    color: var(--blue);
+    color: var(--orange);
     background-color: var(--lbg);
     text-align: center;
     cursor: pointer;
@@ -100,7 +100,7 @@ body {
 
 .link:hover {
     padding: 3rem 5rem;
-    /* color: var(--blue); */
+    /* color: var(--orange); */
     filter: grayscale(100%);
     transition: padding 1s, color 1s, filter 1s;
 }
